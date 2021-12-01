@@ -1,3 +1,0 @@
-# Atoms
-
-atoms component collection.
