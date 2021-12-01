@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+@import './typography.scss';
+
+body {
+  font-family: $sourceNotoIkeaLatin;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 319px) {
+  html {
+    font-size: 85.33333px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 359px) {
+  html {
+    font-size: 85.33333px;
+  }
+}
+
+/* iPhone4，Nokia Lumia520，iPhone 5/SE */
+@media screen and (min-width: 360px) and (max-width: 374px) {
+  html {
+    font-size: 96px;
+  }
+}
+
+/* 三星s5, 三星note，三星***，Microsoft，Nexus5 */
+@media screen and (min-width: 375px) and (max-width: 383px) {
+  html {
+    font-size: 100px;
+  }
+}
+
+/* iPhone 6/7/8/X */
+@media screen and (min-width: 384px) and (max-width: 399px) {
+  html {
+    font-size: 102.4px;
+  }
+}
+
+/* LG***，Nexus4， */
+@media screen and (min-width: 400px) and (max-width: 410px) {
+  html {
+    font-size: 106.66667px;
+  }
+}
+
+/* 微信模拟器 */
+@media screen and (min-width: 411px) and (max-width: 413px) {
+  html {
+    font-size: 109.6px;
+  }
+}
+
+/* Nexus5X，Nexus6，Nexus6P，Pixel2，Pixel2 XL */
+@media screen and (min-width: 414px) and (max-width: 422px) {
+  html {
+    font-size: 110.4px;
+  }
+}
+
+/* iPhone 6/7/8 Plus */
+@media screen and (min-width: 423px) and (max-width: 478px) {
+  html {
+    font-size: 112.8px;
+  }
+}
+
+/* LG 4X */
+@media screen and (min-width: 479px) and (max-width: 538px) {
+  html {
+    font-size: 127.73333px;
+  }
+}
+
+/* 索尼MT27i Xperia sola，Nokia N9 */
+@media screen and (min-width: 539px) and (max-width: 599px) {
+  html {
+    font-size: 143.73333px;
+  }
+}
+
+/* 摩托罗拉Droid3/4/Razr Atrix 4g */
+@media screen and (min-width: 600px) and (max-width: 638px) {
+  html {
+    font-size: 160px;
+  }
+}
+
+/* blackberry，Nexus7 */
+@media screen and (min-width: 639px) and (max-width: 767px) {
+  html {
+    font-size: 170.4px;
+  }
+}
+
+/* blackberry */
+@media screen and (min-width: 768px) and (max-width: 799px) {
+  html {
+    font-size: 204.8px;
+  }
+}
+
+/* iPad Mini, iPad */
+@media screen and (min-width: 800px)  and (max-width: 899px) {
+  html {
+    font-size: 213.33333px;
+  }
+}
+
+/* iPad Mini, iPad */
+@media screen and (min-width: 900px) {
+  html {
+    font-size: 100px;
+  }
+}
+
+.pc-view {
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  min-width: 1000px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: 0 auto;
+}
+
+img:not([src]),
+img[src=""] {
+  opacity: 0;
+}

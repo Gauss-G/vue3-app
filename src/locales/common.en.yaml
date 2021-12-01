@@ -1,0 +1,276 @@
+hello: Hello, IKEA！
+contact_customer_service: Customer Service
+edit: Edit
+loading:
+    loading_please_wait: Loading. Please wait...
+not_found:
+    sorry: It seems our links need some grooming. Sorry!
+    not_find: Hmmm...can't reach this page
+    help: You may find needed information from the below link .
+cart: 
+     title: Shopping bag
+     not_available_for_the_time_being: Currently out of stock
+     sold_out_online: Sold out online
+     article_no: product code
+     service: Service
+     paid_assembly_service: Assembly service will be charged separately
+     combined_products_title: Must be completed with
+     combined_products: Complementary item
+     remarks: Note
+     nonMemberPrice: Regular price
+     memberPrice: Family Price
+     product_out_of_stock_tips_prefix: Some products are out of stock/unavailable online in your design, please contact 
+     product_out_of_stock_tips_suffix: for more information
+     totally_product_count: Totally _N_ products
+     check_product_list: Check product list
+     product_component_list: Product component list
+     the_following: Off the shelf
+     one_click_clear: Clear all
+     select_at_least_one_product: The minimum purchase quantity is 1
+     select_up_to_99_items: The maximum  purchase quantity is  99
+     select_all: Select all
+     reduced: Saved
+     view_details: See Details
+     excluding_delivery_fee: Delivery cost not included
+     settlement: Checkout
+     collection: Save
+     collected: Collected
+     delete: Delete
+     deletion_succeeded: Deletion succeeded
+     complete: Finish
+     Administration: Manage
+     immediate_settlement: Checkout Now
+     batch_add_to_bag: Add to bag together
+     add_cart: Add to bag
+     add_your_cart: Added to your shopping bag
+     combined_total_price_label: Total in shopping bag
+     total_price_label: Total
+     merchandise_subtotal: Product subtotal
+     promotional_offers: Offers
+     number_discount: IKEA Family member discount
+     shopping_cart_total: Shopping bag total
+     are_you_sure_you_want_to_delete_the_selected_item: Are you sure you want to delete the selected products?
+     when_you_select_delete: If you choose delete, the selected products will be removed from your shopping bag.
+     cut_off: Price valid
+     failed_to_add_shopping_bag: Failed to add to shopping bag
+     has_added_to_bag_successfully:  has added to to shopping bag, refresh to view
+address:
+    delivery_to_now: Deliver to
+    delivery_to: Deliver to 
+    delivery_to_have: Deliver to n in stock
+    delivery_to_out_of: Deliver to n out of stock
+    select_stock: Choose delivery area to check the stock
+    select_stock_address: Choose from address list
+    select_address: Select address
+    switch_city: Switch city
+    hotCity: Popular city
+    please_select: Please select
+    change_area: change area
+    select_City: Select province / city
+    change_receiving_address: Change shipping address
+    delivery_type: Delivery Method
+    consignee: Recipient
+    receiving_address: Address
+    select_shipping_address: Select shipping address
+    new_address: New address
+    edit_delivery_address: Edit shipping address
+    not_hove_address: You have not set any shipping address yet. Please add one before checkout.
+    create_a_shipping_address: New shipping address
+    delete_address: delete address
+    save_use: Confirm and use
+    default_address: Default address
+    yourAddress: Your address
+assembleService:
+    paid_assembly_service_title: Assembly service
+    assembly_tips: You can assemble them yourself, or you can choose from our two paid assembly services
+    assembly_wan_tip2: After payment, scan the QR code on the page to book your assembly service.
+    reservation_process: Booking procedure
+    pc_step_one: Step 1. Complete payment
+    pc_step_two: Step 2. Scan the code via WeChat to enter mini program 'Wanshifu' assembly service
+    pc_step_three: Step 3. Add the furniture that needs to be assembled and post the task
+    pc_step_four: Step 4. Choose an assembler and pay the fee
+    details_of_paid: About the paid assembly service
+    ikea_assembly_service: IKEA assembly service
+    Wanshifu_platform_assembly_service: Wanshifu Assembly Service
+    please_complete_the_payment_and_order_first:  Please first complete your payment to place your order, then book your assembly service on the order page.
+    description_of_assembly_charge: Explanation of assembly fee
+    the_service_is_provided: This service is provided by an IKEA service provider. Book this service from order history after order placement.
+    general_furniture_assembly: Ordinary furniture assembly
+    if_the_original_price: For orders ≤ 1,000 RMB, the assembly fee is 80 RMB/order. For orders 1,000–2,000 RMB, the assembly fee is 160 RMB/order. For orders > 2,000 RMB, the assembly fee is 8% of the original product prices (except for kitchen and bathroom products).
+    except_for_the_sofa: 120 RMB/item. Except sofa-beds (for VALLENTUNA modular sofas, one assembly fee is charged for each three-seat unit; an assembly of fewer than three seats is charged as a three-seat unit).
+    sofa_assembly_fee: Sofa assembly fee
+    wall_service: Wall-mounting service
+    wall_service_price: 30 RMB/item (including ordinary and tile walls)
+    detailed_service_charge_information: Service details and fees
+    online_service: Online customer service
+    self_service_booking_process: Self-service appointment process
+    the_service_is_provided_by_the_sharing: This service is provided by Wanshifu, a shared service platform partnering with IKEA. Assembly services are provided for furniture products only.
+    the_first_step: Step 1
+    complete_goods_payment: Complete payment
+    step_two: Step 2
+    open_the_wechat_app: Open 'Wanshifu Family Edition' in WeChat mini program and go to 'Furniture Assembly Services for IKEA Customers'.
+    long_press_to_save_the_picture: Scan the QR code on the left (press and hold to save the image) or search for 'Wanshifu Family Edition' in your mini program.
+    step_three: Step 3
+    add_the_furniture: Add the furniture that needs to be assembled and post the task.
+    step_four: Step 4
+    choose_a_master_and_pay_for_it: Choose an assembler and pay a fee
+    more_service: See more service information
+product:
+    resemble_product: Similar products
+    resemble_product_keep: View similar products
+    resemble_product_no: Good taste!
+    resemble_product_no_tips: There is currently no substitution available.
+    not_available_for_the_time_being: Currently out of stock
+    out_of_stock_tips: The product is out of stock, let's see what else
+    out_of_stock: Out of stock
+    term_of_validity: Valid date
+    variants_tip:  variants
+    price_valid_date: Price valid until
+    combined_products: View the related complementary products
+    combined_title: Recommend to include following complementary products together
+    total_quantity_label: Product amount
+    the_maximum_quantity_that_can_be_purchased_is: Purchase limit
+    more_combined_products_available: More complementary items are available
+    pay_title_pax: For
+    pay_title_pax_add: ', we recommend to order knobs and handles in below quantity together . Knobs and handles are sold in pairs.'
+    needs_to_be_combined_with: needs to be combined with
+    or_you_may_try_to: Or you may try to
+    be_similar: Other products similar to n
+    quantity: Quantity
+    product_partially_out_of_stock_tips_prefix: Products partially out of stock, please contact 
+    product_out_of_stock_tips_suffix:  for more information
+    piece: Piece
+    article_no: Product NO.
+    packages: packages
+    total_packages: This product comes as [X] packages
+    single_commodity_packages: This product has multiple packages
+    info:
+        description: Product description
+        material: Materials
+        dimension: Product dimensions
+        package_dimension: Packaging info
+        care: Care instructions
+        environments: Environment and materials
+        assembly: Assembly instructions and documentation
+        reviews: Reviews
+        package_no: Number of packages
+public:
+    its_the_end_of_it: That's it!
+    arrival_reminder: Arrival Reminder
+    failed_to_load: Failed to load. Click refresh
+    cancel: Cancel
+    determine: OK
+    save: Save
+    sign_in: Log in
+    ikea: IKEA
+    account: Account
+    view_items_in_shopping_cart: See what's in your shopping bag
+    go_ahead_and_log_in: login
+    hotSearch: Hot search
+    your_shopping_cart_is_empty: Your shopping cart is empty
+    you_can_add: You can add items to your shopping cart by searching or browsing products
+    go_shopping: Shop now
+operation: 
+    refresh: Refresh
+    see: See
+    view_all: View All
+    view_more: See more
+    view_more_products: View More Products
+    confirm: Confirm
+    submit: Submit
+    previous_step: Previous
+    next_step: Next
+    dismiss: Don't ask me again
+footer:
+    pack_up_more: Less
+    join_club: IKEA Family
+    club_tips: Get exclusive offers, inspiration, and lots more to help bring your ideas to life.All for free.
+    see_more: See more
+    opt_in: Join now
+    use_link: Useful links
+    manual: Furniture Catalogue & Brochures
+    furniture_app: IKEA APP
+    local_mall: Local stores
+    design_tools: Planning tools
+    customer_service: Customer Service
+    common_problem: FAQ
+    contact_us: Contact us
+    our_service: IKEA services
+    is_yj: This is IKEA
+    about_us: About us
+    news_room: Newsroom
+    product_recall: Product recalls
+    firmly_fixed: Secure it!
+    privacy_policy: Privacy policy
+    disclosure_policy: Responsible disclosure policy
+    terms_use: Term of use
+    industry_commerce: Industry and Commerce of Shanghai
+    IKEA_Club: IKEA Family
+    IKEA_corporate_business: IKEA for business
+    Swedish_food_house: IKEA Food
+    scope_online_shopping_mall: Online delivery area
+    Return_policy: Return policy
+    quality_assurance: Warrantiess
+    Design: Design
+    Sustainable_daily_life: A sustainable everyday
+    Community_participation: Community engagement
+    Join_us: Working with us
+    News_contact: Media contact
+    website_uses_cookies_to_make: The IKEA website uses cookies to make browsing easier
+    See_more_about_browser_cookies: Find out more about browser cookies. 
+    we_will_accept_cookies_by_default: If you continue to browse the IKEA website, we will assume you accept cookies.
+    i_accept_it: I accept.
+    shopping_guide: Shopping guide
+    inter_ikea: © Inter IKEA Systems B.V.
+    public_security_number: 沪公网安备31010402001069号
+    record_No: 沪ICP备17055232号-1
+    ikea_news: IKEA News
+links:
+    english: EN
+    chinese: 中文
+    cookies_setting: Cookies setting
+    products: All products
+    my_profile: My profile
+    my_collection: Favourites
+    shopping_cart: Shopping Bag
+    search: search
+    what_are_you_looking_for: Search
+    home: Me
+    index: Home
+    cart: Bag
+    category: Category
+    more: Discovery
+    back_to_home_page: Go back to the IKEA homepage
+search:
+    commodityClassification: Category
+    hotSeries: Popular series
+    hotCategory: Popular categories
+    hot_search: Hot search
+    your_search_history: Your search history
+    designTool: Planner tools
+    product: Product
+    inspiration_tab: More
+pay:
+    settlement_page: Checkout page
+    place_order: Submit 
+    selectOtherDeliveryMethod: More delivery methods
+from:
+    phone_number_cannot_be_empty: Mobile number cannot be empty
+    please_enter_correct_phone_number: Please enter the correct mobile number
+    please_enter_correct_name: Please enter the correct name
+    set_default: Set as default address
+layouts:
+    notSupportInMobile:
+            title: Sorry, mobile devices are not supported temporarily.
+            content: We are optimizing for mobile devices. Please go to a PC device to continue using it for a better experience.
+            btn: Go Back
+comparison:
+    pageTitle: Product comparison - IKEA
+    pageDes: Product comparison - IKEA
+    title: Product comparison
+    goBack: Back
+    deleted: deleted
+    viewGallery: See all pictures
+    empty:
+        title: No selected products
+        des: You can choose new products in the previous view

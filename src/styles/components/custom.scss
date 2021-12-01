@@ -1,0 +1,42 @@
+@use "sass:math";
+
+@function px2rem($value) {
+  $retval: $value * 10;
+
+  @return math.div(math.div($retval, 10), 100) + rem;
+}
+// Font Sizes
+$font-size-1500: 0.8rem;
+$font-size-1400: 0.71rem;
+$font-size-1300: 0.63rem;
+$font-size-1200: 0.56rem;
+$font-size-1100: 0.5rem;
+$font-size-1000: 0.45rem;
+$font-size-900: 0.4rem;
+$font-size-800: 0.36rem;
+$font-size-700: 0.32rem;
+$font-size-600: 0.28rem;
+$font-size-500: 0.25rem;
+$font-size-400: 0.22rem;
+$font-size-300: 0.2rem;
+$font-size-200: 0.18rem;
+$font-size-100: 0.16rem;
+$font-size-75: 0.14rem;
+$font-size-50: 0.12rem;
+$font-size-25: 0.1rem;
+
+// Spacing
+$space-1350: 2.16rem;
+$space-1000: 1.6rem;
+$space-750: 1.2rem;
+$space-550: 0.88rem;
+$space-400: 0.64rem;
+$space-300: 0.48rem;
+$space-250: 0.24rem;
+$space-200: 0.32rem;
+$space-150: 0.24rem;
+$space-125: 0.2rem;
+$space-100: 0.16rem;
+$space-75: 0.12rem;
+$space-50: 0.08rem;
+$space-25: 0.04rem;

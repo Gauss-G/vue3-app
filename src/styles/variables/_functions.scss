@@ -1,0 +1,44 @@
+@use "sass:math";
+
+@function adjustcolour($basecolor, $l) {
+  $returnColor: $basecolor;
+
+  @if $l < 0 {
+    $returnColor: mix(#000, $basecolor, abs($l));
+  }
+
+  @else {
+    $returnColor: mix(#fff, $basecolor, abs($l));
+  }
+
+  @return $returnColor;
+}
+
+@function px2rem($value) {
+  $retval: $value * 100;
+
+  @return math.div(math.div($retval, 16), 100) + rem;
+}
+
+@function px2em($value) {
+  $retval: $value * 100;
+
+  @return math.div(ceil(math.div($retval, 16)), 100) + em;
+}
+
+@function px2lineheight($font-size, $line-height) {
+  $retval: math.div($line-height, $font-size);
+
+  @return $retval;
+}
+
+@function cubicBezierCurve($property, $transition: false) {
+  @if $transition == true {
+    @return $property $duration-slow-web cubic-bezier(0.25, 0.1, 0.25, 1);
+  }
+
+  @else {
+    // for animation
+    @return $property $duration-slow-web cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+  }
+}
