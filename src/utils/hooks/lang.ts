@@ -1,7 +1,7 @@
 
-import gioHooks from '@/utils/hooks/gio'
+// import gioHooks from '@/utils/hooks/gio'
 export default function langHooks() {
-  const { gio } = gioHooks()
+  // const { gio } = gioHooks()
 
   const handleSetLanguage = (language: 'en' | 'zh') => {
     localStorage.removeItem('getScrollTopzh')
@@ -16,7 +16,7 @@ export default function langHooks() {
     const changeLanguage = `cn/${language}`
     const beforeUrl = window.location.href
     const afterUrl = beforeUrl.replace(/\/cn\/\S\S/, `/${changeLanguage}`)
-    gio.trackByEventID('headerLanguageSwitch', { targetLang: language })
+    // gio.trackByEventID('headerLanguageSwitch', { targetLang: language })
     window.location.href = afterUrl
     // // Find whether target url is valid by response head
     // const req = new XMLHttpRequest()

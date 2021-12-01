@@ -96,17 +96,16 @@ export default {
     intersectionObserverProcessor(entries) {
       entries.forEach((entry) => {
         // Check if the target is visible in root viewpoint
-        if (entry.isIntersecting) {
+        if (entry.isIntersecting)
           this.$emit('isIntersecting')
-          if (this.allowRepeatingTrigger) {
-            this.enableTracking && this.$gio.trackModuleExposureEvent(this.trackId, this.extendedAttributes)
-            this.triggeredCount++
-          }
-          else if (this.triggeredCount === 0) {
-            this.enableTracking && this.$gio.trackModuleExposureEvent(this.trackId, this.extendedAttributes)
-            this.triggeredCount++
-          }
-        }
+          // if (this.allowRepeatingTrigger) {
+          //   this.enableTracking && this.$gio.trackModuleExposureEvent(this.trackId, this.extendedAttributes)
+          //   this.triggeredCount++
+          // }
+          // else if (this.triggeredCount === 0) {
+          //   this.enableTracking && this.$gio.trackModuleExposureEvent(this.trackId, this.extendedAttributes)
+          //   this.triggeredCount++
+          // }
       })
     },
     resolveObserverTargetPosition(parentElement) {

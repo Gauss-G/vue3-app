@@ -5,6 +5,11 @@ const routes: {}[] = [
     component: () => import('./views/comparison.vue'),
   },
   {
+    path: '/home',
+    name: 'home',
+    component: () => import('./views/home/index.vue'),
+  },
+  {
     path: '/cn/:lang',
     name: 'root',
     redirect: (to) => {

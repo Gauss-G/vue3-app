@@ -143,7 +143,7 @@
         :product-list="item.product.childItems"
         @viewAll="viewAllChildItems"
       />
-      <assemble-service v-if="item.product.hasAssemblyService" v-model:value="showService" :product="serviceProduct" />
+      <!-- <assemble-service v-if="item.product.hasAssemblyService" v-model:value="showService" :product="serviceProduct" /> -->
       <i-layer v-model:value="showVTPItems" :type="isH5?'bottom':'right'" :header-show="true" :title="isH5?t('cart.product_component_list'):''">
         <VirtualProductDetail :virtual-product="item.product" />
       </i-layer>
@@ -167,8 +167,8 @@ import InputNumber from 'molecules/InputNumber/InputNumber.vue'
 import { getImgUrlByPath, debounce, formatPrice } from '@/utils/helper'
 import { shoppingBag } from '@/api/config'
 import { generateLink } from '@/utils/index'
-import gioHooks from '@/utils/hooks/gio'
-const { gio } = gioHooks()
+// import gioHooks from '@/utils/hooks/gio'
+// const { gio } = gioHooks()
 
 const props = defineProps({
   dataTrackId: {
@@ -227,7 +227,7 @@ const { t, $router, locale, isH5 } = base()
 const quantity = ref(props.item.quantity)
 const showVTPItems = ref(false) // 显示虚拟商品的商品清单及配件
 const showService = ref(false) // 组装服务
-const serviceProduct = ref({}) // 组装服务gio商品信息
+// const serviceProduct = ref({}) // 组装服务gio商品信息
 const hasUnavailableItems = computed(() => {
   return props.item.product.childItems?.some((child) => {
     return child.product.stockStatus === 'OUTOFSTOCK'
@@ -287,11 +287,11 @@ const goDetail = (item) => {
   if (item.product?.offline || item.product?.itemType === 'VTP')
     return
 
-  gio.trackClickData({
-    trackId: props.dataTrackId ? props.dataTrackId : `product-click.${props.index}`,
-    trackLabel: item.product.name,
-    productInfo: item.product.type === 'SPR' ? `s${item.product.id}` : item.product.id,
-  })
+  // gio.trackClickData({
+  //   trackId: props.dataTrackId ? props.dataTrackId : `product-click.${props.index}`,
+  //   trackLabel: item.product.name,
+  //   productInfo: item.product.type === 'SPR' ? `s${item.product.id}` : item.product.id,
+  // })
   // const showId = this.utils.getDetailUrl(item.product)
   const showId = item.product.id
   sessionStorage.setItem('listPosition', props.index.toString())
@@ -322,9 +322,9 @@ const editItem = () => {
 }
 // 打开组装服务
 const openAssembleService = () => {
-  serviceProduct.value = props.item.product
-  showService.value = true
-  emit('showServiceContBtn')
+  // serviceProduct.value = props.item.product
+  // showService.value = true
+  // emit('showServiceContBtn')
 }
 const handelDate = (date) => {
   return date.replace(/-/g, '.')
@@ -333,21 +333,21 @@ const selectBtn = (item) => {
   item.selected = !item.selected
 
   const trackId = item.selected ? `${props.dataModuleId}.0` : `${props.dataModuleId}.1`
-  gio.trackClickData({
-    trackId,
-    trackLabel: item.selected ? '选择商品' : '去选商品',
-  })
+  // gio.trackClickData({
+  //   trackId,
+  //   trackLabel: item.selected ? '选择商品' : '去选商品',
+  // })
 
   emit('calculationAllSelect')
 }
 // 打开配套买
 const openCombined = () => {
   const item = props.item
-  gio.trackClickData({
-    trackId: props.dataTrackId ? props.dataTrackId : `combined-click.${props.index}`,
-    trackLabel: item.product?.name || item.name,
-    productInfo: item.product?.type === 'SPR' ? `s${item.product?.id}` : item.product?.id || item.id,
-  })
+  // gio.trackClickData({
+  //   trackId: props.dataTrackId ? props.dataTrackId : `combined-click.${props.index}`,
+  //   trackLabel: item.product?.name || item.name,
+  //   productInfo: item.product?.type === 'SPR' ? `s${item.product?.id}` : item.product?.id || item.id,
+  // })
   emit('openCombined', item, props.index)
 }
 const onCallStockAddress = () => {

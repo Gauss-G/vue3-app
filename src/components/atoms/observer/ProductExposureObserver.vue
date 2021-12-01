@@ -92,14 +92,14 @@ export default {
       entries.forEach((entry) => {
         // Check if the target is visible in root viewpoint
         if (entry.isIntersecting) {
-          if (this.allowRepeatingTrigger) {
-            this.$gio.trackExposureProductEvent(this.product, this.extendedAttributes)
-            this.triggeredCount++
-          }
-          else if (this.triggeredCount === 0) {
-            this.$gio.trackExposureProductEvent(this.product, this.extendedAttributes)
-            this.triggeredCount++
-          }
+          // if (this.allowRepeatingTrigger) {
+          //   this.$gio.trackExposureProductEvent(this.product, this.extendedAttributes)
+          //   this.triggeredCount++
+          // }
+          // else if (this.triggeredCount === 0) {
+          //   this.$gio.trackExposureProductEvent(this.product, this.extendedAttributes)
+          //   this.triggeredCount++
+          // }
         }
       })
     },

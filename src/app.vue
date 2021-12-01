@@ -11,8 +11,8 @@ import base from '@/composables/base'
 import { debounce } from '@/utils/helper'
 import { paramsFormat } from '@/utils'
 import IPageLoading from '@/components/atoms/IPageLoading/index.vue'
-import gioHooks from '@/utils/hooks/gio'
-const { changeDeviceConfig } = gioHooks()
+// import gioHooks from '@/utils/hooks/gio'
+// const { changeDeviceConfig } = gioHooks()
 
 const query: {
   hideNavi?: 'true' | 'false' | ''
@@ -28,7 +28,7 @@ const pageLoading = computed(() => {
 })
 
 watch(isH5, (isH5) => {
-  changeDeviceConfig(isH5 ? 'h5' : 'pc')
+  // changeDeviceConfig(isH5 ? 'h5' : 'pc')
 })
 
 window.onresize = debounce(() => {

@@ -3,7 +3,7 @@ import lazyPlugin from 'vue3-lazy'
 // import { useI18n } from 'vue-i18n'
 import App from './app.vue'
 import locales from './locales'
-import gio from './plugin/gio'
+// import gio from './plugin/gio'
 import router from './router'
 import store from './store'
 
@@ -18,5 +18,5 @@ createApp(App)
   .use(router)
   .use(locales)
   .use(lazyPlugin, {})
-  .use(gio)
+  // .use(gio)
   .mount('#app')
